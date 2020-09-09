@@ -1,0 +1,10 @@
+#pragma once
+typedef enum class STATUS :int {
+	SUCCESS,
+	FAILED_FILE_NOT_FOUND,
+	FAILED_TO_CREATE_FILE,
+	FAILED_TO_WRITE,
+	FAILED_TO_READ
+}RETURN_STATUS;
+
+int print(const RETURN_STATUS status);

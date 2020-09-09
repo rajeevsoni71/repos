@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stream_classes_ModernCpp", "Stream_classes_ModernCpp\Stream_classes_ModernCpp.vcxproj", "{0367526F-9B39-44CF-8947-9ECB225915DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Debug|x64.ActiveCfg = Debug|x64
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Debug|x64.Build.0 = Debug|x64
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Debug|x86.ActiveCfg = Debug|Win32
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Debug|x86.Build.0 = Debug|Win32
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Release|x64.ActiveCfg = Release|x64
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Release|x64.Build.0 = Release|x64
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Release|x86.ActiveCfg = Release|Win32
+		{0367526F-9B39-44CF-8947-9ECB225915DB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB2A50A6-9AEA-4FE3-BE0E-425F512F6A67}
+	EndGlobalSection
+EndGlobal
