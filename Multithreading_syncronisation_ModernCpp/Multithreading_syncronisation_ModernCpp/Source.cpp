@@ -114,15 +114,21 @@ int main(void) {
 	* If you want to use multiple thread to read simultaniously
 	*/
 	pthread_rwlock_init(&read_write_lock,NULL);
+	
+	pthread_attr_t attr;
+	pthread_attr_init(&attr);
+	int* detachstate = new int();
+	memset(detachstate, 0x00, sizeof(int));
+	pthread_attr_getdetachstate(&attr, detachstate);
+	std::cout << *detachstate <<std::endl;
 
 	std::string message{ "Hello Rajeev!!!!!!" };
 	std::cout << "Main thread started" << std::endl;
-
-	pthread_create(&threads[0], NULL, create_file, (void*)&tid[0]);
-	pthread_create(&threads[1], NULL, read_file, (void*)&tid[1]);
-	pthread_create(&threads[2], NULL, write_file, (void*)&message);
-	pthread_create(&threads[3], NULL, read_file, (void*)&tid[3]);
-	pthread_create(&threads[4], NULL, read_file, (void*)&tid[4]);
+	pthread_create(&threads[0], &attr, create_file, (void*)&tid[0]);
+	pthread_create(&threads[1], &attr, read_file, (void*)&tid[1]);
+	pthread_create(&threads[2], &attr, write_file, (void*)&message);
+	pthread_create(&threads[3], &attr, read_file, (void*)&tid[3]);
+	pthread_create(&threads[4], &attr, read_file, (void*)&tid[4]);
 
 	for (int i = 0; i < 5; i++) {
 		pthread_join(threads[i], 0);
@@ -136,7 +142,9 @@ int main(void) {
 	/*
 	* If you want to use multiple thread to read simultaniously
 	*/
+	pthread_attr_destroy(&attr);
 	pthread_rwlock_destroy(&read_write_lock);
+	delete detachstate;
 	std::cout << "Main thread End" << std::endl;
 
 	return 0;

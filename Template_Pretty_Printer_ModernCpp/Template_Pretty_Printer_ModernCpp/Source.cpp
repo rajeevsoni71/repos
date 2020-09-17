@@ -41,7 +41,7 @@ But for vector problem is with only Print
 so lets create only specialized Print function for vector<int> 
 instead of whole new template class
 */
-//This is called explicit specialization for member function of a class
+//This is called explicit specialization of member function of a class
 template<>
 void PrettyPrinter<std::vector<int>>:: Print() {
 	if (m_pdata != nullptr) {
