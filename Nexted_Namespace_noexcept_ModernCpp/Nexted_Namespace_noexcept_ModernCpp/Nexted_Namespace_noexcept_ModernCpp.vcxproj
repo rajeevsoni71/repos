@@ -24,6 +24,7 @@
     <ProjectGuid>{855c5f6f-e47c-4a60-b1bc-8f05fd86db0d}</ProjectGuid>
     <RootNamespace>NextedNamespacenoexceptModernCpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Nexted_Namespace_noexcept_constexprLambda_ModernCpp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
