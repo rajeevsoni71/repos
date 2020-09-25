@@ -166,7 +166,7 @@ And you can get the name back:
 // Linux, NetBSD:
 int pthread_getname_np(pthread_t th, char *buf, size_t len);
 // some implementations don't have a safe buffer (see MKS/IBM below)
-int pthread_getname_np(pthread_t thread, const char **name);
+int pthread_setname_np(pthread_t thread, const char **name);
 int pthread_getname_np(pthread_t thread, char *name);
 
 // FreeBSD & OpenBSD: dont' seem to have getname/get_name equivalent?
