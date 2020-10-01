@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <any>
+#include <limits>
 class Integer {
 	int a;
 	friend std::ostream& operator<<(std::ostream& out, const Integer& obj) {
@@ -32,6 +33,9 @@ public:
 };
 void Basic() {
 	std::any number{ 10 };
+	//int a = 99999999999; //4bytes 0xFFFF
+	int b= static_cast<int>(2147483648);
+	std::cout <<"int max" <<INT_MAX << std::endl;
 	// any may allocate memory in heap so 
 	//you may need to deallocate it as soon as 
 	//you are done with it.
@@ -61,6 +65,7 @@ void Basic() {
 	}
 }
 int main() {
+	//Basic();
 	/*
 	* std::any_cast<Integer> - this return rvlaue by default
 	* std::any_cast<Integer&> - this will return the reference of that object

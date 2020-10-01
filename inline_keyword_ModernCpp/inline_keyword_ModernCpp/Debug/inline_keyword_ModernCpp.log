@@ -1,3 +1,7 @@
-﻿  Source.cpp
-C:\Users\coolr\source\repos\inline_keyword_ModernCpp\inline_keyword_ModernCpp\Source.cpp(2,5): error C2086: 'int global': redefinition
-C:\Users\coolr\source\repos\inline_keyword_ModernCpp\inline_keyword_ModernCpp\Header.h(3): message : see declaration of 'global'
+﻿  A.cpp
+  B.cpp
+  Source.cpp
+  Generating Code...
+B.obj : error LNK2005: "int global" (?global@@3HA) already defined in A.obj
+Source.obj : error LNK2005: "int global" (?global@@3HA) already defined in A.obj
+C:\Users\coolr\source\repos\inline_keyword_ModernCpp\Debug\inline_keyword_ModernCpp.exe : fatal error LNK1169: one or more multiply defined symbols found
