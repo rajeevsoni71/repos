@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\coolr\source\repos\open_close_principle_DesignPattern\open_close_principle_DesignPattern\Source.cpp(11,2): warning C4091: 'typedef ': ignored on left of 'Product' when no variable is declared
+C:\Users\coolr\source\repos\open_close_principle_DesignPattern\open_close_principle_DesignPattern\Source.cpp(43,2): warning C4091: 'typedef ': ignored on left of 'ProductFilter' when no variable is declared
+C:\Users\coolr\source\repos\open_close_principle_DesignPattern\open_close_principle_DesignPattern\Source.cpp(63,2): warning C4091: 'typedef ': ignored on left of 'ColorSpecification' when no variable is declared
+C:\Users\coolr\source\repos\open_close_principle_DesignPattern\open_close_principle_DesignPattern\Source.cpp(75,2): warning C4091: 'typedef ': ignored on left of 'SizeSpecification' when no variable is declared
+C:\Users\coolr\source\repos\open_close_principle_DesignPattern\open_close_principle_DesignPattern\Source.cpp(88,2): warning C4091: 'typedef ': ignored on left of 'ColorAndSizeSpecification' when no variable is declared
+C:\Users\coolr\source\repos\open_close_principle_DesignPattern\open_close_principle_DesignPattern\Source.cpp(106,2): warning C4091: 'typedef ': ignored on left of 'BetterFilter' when no variable is declared
+  open_close_principle_DesignPattern.vcxproj -> C:\Users\coolr\source\repos\open_close_principle_DesignPattern\Debug\open_close_principle_DesignPattern.exe
