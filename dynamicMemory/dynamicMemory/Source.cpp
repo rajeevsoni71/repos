@@ -39,11 +39,12 @@ public:
 };
 
 void class_new() {
-	Student stu1(123, "Rajeev Soni"); // paramterised constructor
-	Student stu2(stu1); //copy constructor
+	//Student stu1(123, "Rajeev Soni"); // paramterised constructor
+	//Student stu2(stu1); //copy constructor
 	Student stu3;// default constructor
 	Student stu4;// default constructor
-	stu3 = stu2;// copy assignment
+	//stu3 = stu2;// copy assignment
+	Student stu5 = stu4 = stu3; // from 3 to 4 copy assignment and 4 to 5 copy constructor
 }
 void OneDimArray() {
 	//using pointers
@@ -67,18 +68,49 @@ void OneDimArray() {
 }
 
 void TwoDimArray() {
+	//using single pointer
 	int m = 2;
 	int n = 2;
-	int** row = new int*[m * n];
-	int* col = nullptr;
-	for (size_t i = 0; i < m*n; i++)
+	int* arr1 = new int[m * n];
+	for (size_t i = 0; i < m; i++)
 	{
-
+		for (size_t j = 0; j < n; j++)
+		{
+			*(arr1 + i*n +j) = rand()%100;
+			std::cout << *(arr1 + i * n + j) << " ";
+		}
 	}
+	std::cout << std::endl;
+	delete[] arr1;
+	//using double pointer
+	int** arr2 = new int* [m];
+	for (size_t i = 0; i < m; i++)
+	{
+		arr2[i] = new int[n];
+	}
+	//intializing memory
+	for (size_t i = 0; i < m; i++)
+	{
+		for (size_t j = 0; j < n; j++)
+		{
+			arr2[i][j] = rand() % 100;
+			std::cout << arr2[i][j] << " ";
+		}
+	}
+	std::cout << std::endl;
+
+	//now freeing the memory
+	for (size_t i = 0; i < n; i++)
+	{
+		delete[] arr2[i];
+	}
+	delete[] arr2;
 }
 
 int main() {
 	OneDimArray();
+	TwoDimArray();
+	class_new();
 	return 0;
 }
 
