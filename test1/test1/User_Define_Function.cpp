@@ -6,7 +6,6 @@ int substring(char* sub, const char* string)
 {
     int i{};
     int j{};
-    bool found{ false };
     while ((string[i] != '\0') && (sub[j] != '\0'))
     {
         if (string[i] != sub[j]) {

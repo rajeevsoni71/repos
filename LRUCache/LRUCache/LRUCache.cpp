@@ -20,9 +20,9 @@ class Cache {
 
 protected:
     map<int, Node*> mp; //map the key to the node in the linked list
-    int cp;  //capacity
-    Node* tail; // double linked list tail pointer
-    Node* head; // double linked list head pointer
+    int cp{};  //capacity
+    Node* tail{}; // double linked list tail pointer
+    Node* head{}; // double linked list head pointer
     virtual void set(int, int) = 0; //set function
     virtual int get(int) = 0; //get function
 
