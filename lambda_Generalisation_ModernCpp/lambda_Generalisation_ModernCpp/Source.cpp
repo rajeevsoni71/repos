@@ -17,7 +17,7 @@ int main() {
 
 	std::ofstream out{"file.txt"};
 	//why move because ofstream class cannot copied 
-	auto lamfile = [out=std::move(out)](int val) mutable { // mutable becasue we the editing the out inside the lambda
+	auto lamfile = [out=std::move(out)](int val) mutable { // mutable becasue we the editing the ofstream inside the lambda
 		out << val;
 	};
 	//but don;t want out to be use anywhere in the code except the lambda function

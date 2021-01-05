@@ -1,4 +1,6 @@
-﻿  Source.cpp
-C:\Users\coolr\source\repos\Type_casting_modernCpp\Type_casting_modernCpp\Source.cpp(59,8): warning C4101: 'b': unreferenced local variable
-C:\Users\coolr\source\repos\Type_casting_modernCpp\Type_casting_modernCpp\Source.cpp(60,24): warning C4101: 'pd': unreferenced local variable
+﻿  CBase.cpp
+  CDerived.cpp
+  Integer.cpp
+  Source.cpp
+  Generating Code...
   Type_casting_modernCpp.vcxproj -> C:\Users\coolr\source\repos\Type_casting_modernCpp\Debug\Type_casting_modernCpp.exe
